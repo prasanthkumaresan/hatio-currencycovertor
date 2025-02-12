@@ -1,0 +1,240 @@
+*{
+  box-sizing: border-box;
+}
+.app-maincontainer{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.header-container{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width:600px){
+  .header-container{
+    gap: 70px;
+    justify-content: flex-start;
+  }
+}
+.header-logo{
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  width: 120px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.header-logo-sub{
+  background-color: rgb(70, 239, 70);
+  display: block;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 5px;
+  width: 120px;
+  margin: 0;
+}
+.header-logo-des{
+  display: block;
+  color: white;
+  width: 120px;
+  font-size: 0.7rem;
+  letter-spacing: 0.6px;
+}
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+@media (min-width:600px){
+  .hamburger-header{
+    display: none;
+  }
+}
+.larger-navigations{
+  max-width: 500px;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+  display: none;
+}
+@media (min-width:600px){
+  .larger-navigations{
+    display: flex;
+  }
+}
+.larger-navigations span{
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.larger-navigations span:hover{
+  font-weight: bolder;
+}
+.header-btn{
+  background-color: rgb(91, 233, 91);
+  color: black;
+  border: none;
+}
+
+.convertor-container{
+  background-color: rgba(233, 232, 232, 0.5);
+  border: 1px solid white;
+  padding: 20px;
+  width: 90%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width:600px){
+  .convertor-container{
+    max-width: 400px;
+  }
+}
+.convertor-header{
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.select-maincontainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.convertor-selection{
+  width: 100%;
+}
+.convertor-selection-from{
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+.select-container{
+  /* background-color: transparent;
+  color: white; */
+  border: 1px solid white;
+  outline: none;
+  padding: 5px 10px;
+  margin: 10px 0px;
+  width: 70%;
+}
+.styling-icon{
+  color: white;
+  size: 1rem;
+}
+.convert-symbol{
+  display: flex;
+  flex-direction: column;
+}
+.symbol-con{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.convert-symbol span{
+  size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.convertor-readinput{
+  margin: 10px 0px;
+  padding: 10px 16px 10px 7px;
+  background-color: rgb(80, 150, 220);
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.api-status{
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.rate-btn{
+  background-color: rgb(244, 185, 75);
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+  margin: 8px 0px;
+  align-self: flex-end;
+}
+.amount-input{
+  margin: 10px 0px;
+  padding: 10px 16px 10px 7px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  outline: none;
+  width: 70%;
+}
+.convert-btn{
+  background-color: rgb(78, 243, 78);
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+  margin: 8px 0px;
+  margin-left: 2px;
+}
+.convert-inputcont{
+  width: 100%;
+  display: flex;
+}
+.convertor-label{
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  margin-bottom: 5px;
+  align-self: flex-start;
+  padding-right: 5px;
+}
+.converted-amt-desc{
+  color: rgb(37, 245, 106);
+  font-size: 1.1rem;
+  font-weight: bold;
+  align-self: flex-end;
+}
+.error{
+  color: rgb(118, 2, 2);
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.err-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button{
+  cursor: pointer;
+}
